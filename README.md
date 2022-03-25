@@ -1,7 +1,7 @@
-# worm-bot
-Worm-bot - random shit bot
+# 🐞 worm-bot
+random shit bot
 
-# self-host
+# 💻 self-host
 To run bot on your machine, you must change some in the "config.json"
 
 ### config.json example:
