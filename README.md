@@ -2,7 +2,7 @@
 Worm-bot - random shit bot
 
 # self-host
-To run bot on your machine, you must go to "config.json" and change everything you want.
+To run bot on your machine, you must change some in the "config.json"
 
 ### config.json example:
 ```
