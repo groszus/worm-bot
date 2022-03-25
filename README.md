@@ -2,7 +2,7 @@
 random shit bot created in Discord.js v13 with ***slash commands***
 
 # 💻 self-host
-To run bot on your machine, you must change some in the "config.json"
+To run bot on your machine, you must change some in the "config.json" and install all packages (`npm install`)
 
 ### config.json example:
 ```
