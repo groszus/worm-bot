@@ -12,14 +12,12 @@ module.exports = client;
 
 client.commands = new Discord.Collection();
 client.slashCommands = new Discord.Collection();
-client.config = require(`./config.json`)
-
 require("./handler/command")(client);
 require("./handler/event")(client);
 
 process.on('unhandledRejection', error => require('./events/error')(error))
 process.on('uncaughtException', error => require('./events/error')(error))
 
-client.login(client.config.token).catch(() => { 
+client.login(config.token).catch(() => { 
     console.log(`❌ Invaild token! Go to "config.json" and replace "your token" with your bot token!`)
 })
