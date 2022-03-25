@@ -1,0 +1,7 @@
+{
+    "token": "your token",
+    "dev": ["bot owner id (you can add more owners)"],
+    "error_channel_id": "errors channel id",
+    "default_color": "#2f3136",
+    "error_color": "RED"
+}

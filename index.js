@@ -1,0 +1,25 @@
+global.Discord = require(`discord.js`)
+global.client = new Discord.Client({ intents: 32767, allowedMentions: { repliedUser: false } });
+global.util = require(`util`)
+global.glob = require(`glob`)
+global.globPromise = util.promisify(glob)
+global.ms = require(`ms`)
+global.fs = require(`fs`)
+global.axios = require(`axios`)
+global.fetch = require(`node-fetch`)
+global.config = require(`./config.json`)
+module.exports = client;
+
+client.commands = new Discord.Collection();
+client.slashCommands = new Discord.Collection();
+client.config = require(`./config.json`)
+
+require("./handler/command")(client);
+require("./handler/event")(client);
+
+process.on('unhandledRejection', error => require('./events/error')(error))
+process.on('uncaughtException', error => require('./events/error')(error))
+
+client.login(client.config.token).catch(() => { 
+    console.log(`❌ Invaild token! Go to "config.json" and replace "your token" with your bot token!`)
+})
