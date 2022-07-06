@@ -19,8 +19,7 @@ module.exports = {
         }
 
         try {
-            const { execSync } = require(`child_process`)
-            const a = await execSync(`${args.join(` `)}`)
+            const a = await cp.execSync(`${args.join(` `)}`)
 
             const embed = new Discord.MessageEmbed()
                 .setColor(config.default_color)
