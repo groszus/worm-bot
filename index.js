@@ -19,5 +19,5 @@ process.on('unhandledRejection', error => require('./events/error')(error))
 process.on('uncaughtException', error => require('./events/error')(error))
 
 client.login(config.token).catch(() => { 
-    console.log(`❌ Invaild token! Go to "config.json" and replace "your token" with your bot token!`)
+    console.log(`❌ Invaild token! Go to "config.json" and check token!`)
 })
