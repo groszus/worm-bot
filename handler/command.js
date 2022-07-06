@@ -12,9 +12,6 @@ module.exports = async (client) => {
     })
 
     client.on("ready", async () => {
-        await client.guilds.cache
-            .get(`872760662676344873`)
-            .commands.set(x)
         await client.application.commands.set(x);
     })
 };
