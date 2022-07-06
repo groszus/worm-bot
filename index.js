@@ -8,6 +8,7 @@ global.fs = require(`fs`)
 global.axios = require(`axios`)
 global.fetch = require(`node-fetch`)
 global.config = require(`./config.json`)
+global.cp = require(`child_process`)
 module.exports = client;
 
 client.commands = new Discord.Collection();
