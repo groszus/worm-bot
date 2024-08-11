@@ -1,5 +1,3 @@
-# WARNING THIS CODE IS ACUSTIC ⚠️⚠️⚠️ (but works)
-
 # 🐞 worm bot
 random bot created in Discord.js v13 with **slash commands**
 
